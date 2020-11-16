@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,19 +13,27 @@ body  {
     justify-content: center;
     text-align: center;
     height: 100vh;
+    background-color: rgba(10,23,55,0.5);
     color: white;
+    height: 100vh;
+    font-family: 'Lobster', cursive;
+
+  
+}
+
+html{
+
+
     background-image:url("https://source.unsplash.com/random");
     background-size: cover;
-    height: 100vh;
-    font-family: 'Lato', sans-serif;
-  
+
+    
 }
 
 
 .main{
 
-
-    display: flex;
+    font-size: 2rem ;
     backdrop-filter: blur(5px) brightness(50%);
     padding: 2rem;
     border-radius: 20px;
@@ -30,11 +42,14 @@ body  {
 
 .nav{
     
+    display: flex;
     outline: none;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: 1rem;
+    font-size: 1rem;
+
 
 
 }
