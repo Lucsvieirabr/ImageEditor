@@ -30,6 +30,7 @@ body  {
 }
 .nav{
     
+    
     display: flex;
     background: linear-gradient(to bottom right, #272c2a, #07637a);
     align-items: center;
