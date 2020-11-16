@@ -30,10 +30,12 @@ body  {
 
 .nav{
     
-    
+    outline: none;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
+
 
 }
 .nav>div{
