@@ -62,3 +62,21 @@ html{
     transform: scale(1.05); 
     transition: 0.2s ease;
 }
+
+
+input {
+
+    display: flex;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(252, 252, 252);
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input:focus {
+    background-color: #eee;
+}
