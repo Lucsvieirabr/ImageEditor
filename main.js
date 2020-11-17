@@ -18,6 +18,8 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
   function EditImage(){
 
     var IMAGE = document.getElementsByClassName("file-input");
+    document.getElementsByClassName("main").innerHTML = IMAGE;
+    
     
 
 
