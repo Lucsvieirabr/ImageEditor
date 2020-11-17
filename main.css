@@ -72,11 +72,28 @@ input {
     font-size: 1rem;
     border: none;
     background-color: rgb(252, 252, 252);
-    margin: 20px;
+    margin: 5px;
     border-radius: 20px;
     text-align: center;
+    font-family: 'Lobster', cursive;
+
 }
 
 input:focus {
-    background-color: #eee;
+    background-color: rgb(247, 208, 208);
+}
+
+#button{
+
+    padding: 0.5rem;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-family: 'Lobster', cursive;
+    background-color: rgb(221, 215, 215);
+
+
+
+
 }
