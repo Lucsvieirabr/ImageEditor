@@ -29,9 +29,20 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
         //Converting Binary Data to base 64
         var base64String = window.btoa(binaryData);
         //showing file converted to base64
-        document.getElementById('img').setAttribute("src", "data:image/png;base64,"+base64String+"");
+        document.getElementById('mycanvas').setAttribute("style", "background:url('data:image/png;base64,"+base64String+"'); background-position: center; background-size: cover;");
         // document.getElementById('base64').value = base64String;
-        document.getElementById("mycanvas").setAttribute("display", "block");
+        document.getElementById("mycanvas").style.setProperty("display", "block");
+        var image = new Image();
+        image.src = base64String;
+        image.onload = function () {
+          var height = this.height;
+          var width = this.width;
+          document.getElementById("mycanvas").style.setProperty("width", width);
+          document.getElementById("mycanvas").style.setProperty("height", height);
+
+        }
+        
+
         
       };
     })(f);
