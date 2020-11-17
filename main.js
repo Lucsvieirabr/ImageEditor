@@ -11,7 +11,9 @@
 
   function setconfigson(){
 
-   document.getElementsByClassName("menu").style.display="block";
+   var menu = document.getElementById("menu");
+   menu.style.setProperty('display', 'block');
+
 
 
   }
