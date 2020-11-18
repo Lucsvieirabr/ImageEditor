@@ -7,6 +7,8 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 }
 
   var evet;
+  var heightI;
+  var widthI;
 
   function setconfigson(evt){
 
@@ -33,14 +35,21 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
         // document.getElementById('base64').value = base64String;
         document.getElementById("mycanvas").style.setProperty("display", "block");
         var image = new Image();
-        image.src = base64String;
+        myimgsrc = "data:image/png;base64,"+base64String+"";
+        image.src = myimgsrc;
         image.onload = function () {
-          var height = this.height;
-          var width = this.width;
-          document.getElementById("mycanvas").style.setProperty("width", width);
-          document.getElementById("mycanvas").style.setProperty("height", height);
+          heightI = image.height;
+          widthI = image.width;
+          mycanvas.width = widthI;
+          mycanvas.height = heightI;
+
+          //Drawing on the Image
+          ctx.fillStyle = 'rgba(50, 54, 51, 07)';
+          ctx.fillRect(0,0, widthI,(heightI/100 * 25));
 
         }
+
+      
         
 
         
