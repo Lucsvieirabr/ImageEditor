@@ -59,7 +59,6 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
       ctx.font = "20px Lobster";
       var valor = document.getElementById("valor").value;
       var preco = "R$ "+valor+"";
-      console.log(preco);
       ctx.fillText("Valor |"+preco, 9, 688);
       var imagezap = new Image();
           imagezap.src = 'zaplogo.png';
