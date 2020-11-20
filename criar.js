@@ -88,14 +88,14 @@ async function EditImage() {
               ctx.drawImage(image, 0, 300, 500, 350);
               if (window.navigator.msSaveBlob) {
 
-                window.navigator.msSaveBlob(mycanvas.msToBlob(), "ImagemEdita.png")
+                window.navigator.msSaveBlob(mycanvas.msToBlob(), document.getElementById("modelo").value);
 
               } else {
 
                 const a = document.createElement("a");
                 document.body.appendChild(a);
                 a.href = mycanvas.toDataURL();
-                a.download = "ImagemEdita.png"
+                a.download = document.getElementById("modelo").value;
                 a.click();
 
               }
